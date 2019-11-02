@@ -42,6 +42,10 @@ h2 {
   font-family: "ProximaNova-Xbold";
   font-size: 2.5rem; /*Equivalent of 40px but more accessible*/
 }
+p {
+  margin: 0;
+  padding: 0;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

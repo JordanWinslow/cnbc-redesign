@@ -8,6 +8,10 @@ function App() {
     <Fragment>
       <TopNavHeader />
       <StockBar />
+      <h1 align="center" style={{ marginTop: "100px" }}>
+        WORK IN PROGRESS!
+      </h1>
+      <h2 align="center">EXPECT BUGS!</h2>
     </Fragment>
   )
 }

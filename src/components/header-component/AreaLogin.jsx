@@ -26,7 +26,6 @@ const ContentBox = styled.div`
     display: none;
   }
 `
-
 const AreaLinks = styled.div`
   display: flex;
   flex-direction: column;
@@ -63,7 +62,7 @@ const ToolTip = styled.span`
   color: var(--white);
   text-align: center;
   border-radius: 6px;
-  padding: 5px;
+  padding: 7px 20px;
 `
 const Divider = styled.div`
   width: 2px;
