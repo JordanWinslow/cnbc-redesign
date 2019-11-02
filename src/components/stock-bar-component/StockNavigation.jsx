@@ -1,7 +1,10 @@
 import React from "react"
+import styled from "styled-components"
+
+const NavContainer = styled.div``
 
 const StockNavigation = () => {
-  return <div></div>
+  return <NavContainer></NavContainer>
 }
 
 export default StockNavigation
