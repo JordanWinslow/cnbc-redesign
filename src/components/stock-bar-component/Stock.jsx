@@ -28,16 +28,18 @@ const Container = styled.div`
     width: 9rem;
     margin: 0 2.5rem;
     flex: 0 0 auto;
-    /*MAKE TOOLTIP VISIBLE ON HOVER*/
     cursor: help;
-    span {
-      transition: opacity 0.3s ease-in;
-      transition-delay: 1s;
-    }
-    :hover {
+    /*MAKE TOOLTIP VISIBLE ON HOVER ON DESKTOP ONLY*/
+    @media (pointer: fine) {
       span {
-        /******TOOLTIP******/
-        opacity: 1;
+        transition: opacity 0.3s ease-in;
+        transition-delay: 1s;
+      }
+      :hover {
+        span {
+          /******TOOLTIP******/
+          opacity: 1;
+        }
       }
     }
   }
