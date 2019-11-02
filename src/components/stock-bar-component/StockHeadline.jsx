@@ -15,12 +15,28 @@ const Headline = styled.div`
     left: 1.5rem;
   }
   @media (max-width: 750px) {
-    font-size: calc(5px + 1vw);
+    display: flex;
+    font-size: 0.8rem;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
+`
+const Text = styled.p`
+  flex: 0 0 auto; /*ALLOWS ITEMS TO GO OFF SCREEN*/
 `
 
 const StockHeadline = ({ headline }) => {
-  return <Headline>{headline}</Headline>
+  return (
+    <Headline>
+      <Text>{headline}</Text>
+    </Headline>
+  )
 }
 
 export default StockHeadline

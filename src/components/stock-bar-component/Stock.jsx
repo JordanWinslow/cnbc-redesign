@@ -5,6 +5,7 @@ import DownArrow from "../../images/icons/icon-down-trend.svg"
 import UpArrow from "../../images/icons/icon-up-trend.svg"
 
 const Container = styled.div`
+  cursor: pointer;
   position: relative;
   width: 16.6875rem;
   height: 4.125rem;
@@ -12,9 +13,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  pointer-events: none;
   background-color: ${props =>
-    props.direction === "UP" ? "var(--success);" : "var(--fail);"};
+    props.color === "UP" ? "var(--success);" : "var(--fail);"};
+
   @media (max-width: 1530px) {
     width: calc(6rem + 8vw);
   }
@@ -24,9 +25,21 @@ const Container = styled.div`
   @media (max-width: 1020px) {
     height: 3.9375rem;
     /*Switch to Drag and Drop Mode*/
-    width: 13rem;
+    width: 9rem;
     margin: 0 2.5rem;
     flex: 0 0 auto;
+    /*MAKE TOOLTIP VISIBLE ON HOVER*/
+    cursor: help;
+    span {
+      transition: opacity 0.3s ease-in;
+      transition-delay: 1s;
+    }
+    :hover {
+      span {
+        /******TOOLTIP******/
+        opacity: 1;
+      }
+    }
   }
 `
 const CurrentStockValue = styled.p`
@@ -67,10 +80,21 @@ const ChangeAmount = styled.p`
 const ChangePercent = styled.p`
   /**/
 `
-
+const ToolTip = styled.span`
+  position: absolute;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  width: 10rem;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  border-radius: 6px;
+  padding: 7px 20px;
+`
 const Stock = ({ name, direction, currentValue, changeAmount, percent }) => {
   return (
-    <Container direction={direction}>
+    <Container color={direction}>
       <CurrentStockValue>{currentValue}</CurrentStockValue>
       <LeftAlignedBox>
         <img
@@ -83,6 +107,7 @@ const Stock = ({ name, direction, currentValue, changeAmount, percent }) => {
         <ChangeAmount>{changeAmount}</ChangeAmount>
         <ChangePercent>{percent}</ChangePercent>
       </ChangeAmountContainer>
+      <ToolTip>Click Mousewheel to Scroll Left & Right</ToolTip>
     </Container>
   )
 }

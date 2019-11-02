@@ -34,6 +34,7 @@ const AreaLinks = styled.div`
     color: var(--white);
     text-decoration: none;
     transition-duration: 0.3s;
+    /*MAKE TOOLTIP VISIBLE ON HOVER*/
     span {
       transition: opacity 0.3s ease-in;
       transition-delay: 1s;

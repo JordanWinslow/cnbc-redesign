@@ -15,7 +15,6 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
   @media (max-width: 750px) {
     margin-top: 3rem; /*TO COMPOENSATE FOR MOBILE NAVBAR*/
   }
@@ -45,7 +44,6 @@ const StockContainer = styled.div`
     /*Switch to Drag and Drop Mode*/
     align-items: unset;
     justify-content: unset;
-    position: relative;
     bottom: 1.5rem;
     overflow-y: hidden;
     flex-wrap: nowrap;
@@ -64,7 +62,7 @@ const StockBar = () => {
       <LinkHeadlineSection>
         <StockNavigation />
         <Divider />
-        <Headline headline="Dow drops more than 100 points, S&P 600 falls from record to end October" />
+        <Headline headline="Dow drops more than 100 points, S&P 600 falls from record to end October." />
       </LinkHeadlineSection>
       <StockContainer>
         {FETCHCNBCAPI.data.map(stock => {
