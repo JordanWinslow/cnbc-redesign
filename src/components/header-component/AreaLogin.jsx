@@ -35,8 +35,16 @@ const AreaLinks = styled.div`
     color: var(--white);
     text-decoration: none;
     transition-duration: 0.3s;
+    span {
+      transition: opacity 0.3s ease-in;
+      transition-delay: 1s;
+    }
     :hover {
       color: #fcb813;
+      span {
+        /******TOOLTIP******/
+        opacity: 1;
+      }
     }
   }
   .area-link-active {
@@ -45,6 +53,17 @@ const AreaLinks = styled.div`
   @media (max-width: 1020px) {
     display: none;
   }
+`
+const ToolTip = styled.span`
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  width: auto;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
 `
 const Divider = styled.div`
   width: 2px;
@@ -59,24 +78,17 @@ const SignInLink = styled.div`
     color: #fcb813;
   }
 `
+
 /*Receives a string letting us know which area link is active*/
 const AreaLogin = ({ active }) => {
   return (
     <ContentBox>
       <AreaLinks>
-        <a
-          href="#"
-          alt="USA News"
-          className={active === "USA" ? "area-link-active" : ""}
-        >
-          USA
+        <a href="#" className={active === "USA" ? "area-link-active" : ""}>
+          USA<ToolTip>View Only USA News</ToolTip>
         </a>
-        <a
-          href="#"
-          alt="International News"
-          className={active === "INTL" ? "area-link-active" : ""}
-        >
-          INTL
+        <a href="#" className={active === "INTL" ? "area-link-active" : ""}>
+          INTL<ToolTip>View International News</ToolTip>
         </a>
       </AreaLinks>
       <Divider />
