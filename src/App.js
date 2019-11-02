@@ -3,6 +3,7 @@ import React, { Fragment } from "react"
 import TopNavHeader from "./components/header-component/TopNavHeader"
 import StockBar from "./components/stock-bar-component/StockBar"
 import NewsDivider from "./components/NewsDivider"
+import FullWidthHero from "./components/hero-news-component/FullWidthHero"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <TopNavHeader />
       <StockBar />
       <NewsDivider />
+      <FullWidthHero />
       <h1 align="center" style={{ marginTop: "100px" }}>
         WORK IN PROGRESS!
       </h1>
