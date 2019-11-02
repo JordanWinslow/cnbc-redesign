@@ -1,12 +1,47 @@
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: local("ProximaNova-Regular"),
+    url(./fonts/ProximaNova-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: local("ProximaNova-Bold"),
+    url(./fonts/ProximaNova-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "ProximaNova-Xbold";
+  src: local("ProximaNova-Xbold"),
+    url(./fonts/ProximaNova-Xbold.otf) format("opentype");
+}
+html {
+  margin: 0;
+  /*************COLOR SCHEME*************/
+  --primaryDark: #082f6a;
+  --primaryLight: #0f5592;
+  --secondary: #fcb813;
+  --black: #1e1e1e;
+  --white: #fafafa;
+  --success: #098458;
+  --fail: #cc2930;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "ProximaNova-Regular", "Arial", "Helvetica", sans-serif;
+  font-size: 1.0625rem; /*Equivalent of 17px but more accessible*/
+  color: var(--black);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+h1 {
+  /*************Article Headers*************/
+  font-family: "ProximaNova-Xbold";
+  font-size: 2.8125rem; /*Equivalent of 45px but more accessible*/
+}
+h2 {
+  /*************TOP NEWS text*************/
+  font-family: "ProximaNova-Xbold";
+  font-size: 2.5rem; /*Equivalent of 40px but more accessible*/
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
