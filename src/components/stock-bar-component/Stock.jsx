@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import PropTypes from "prop-types"
 
 import DownArrow from "../../images/icons/icon-down-trend.svg"
 import UpArrow from "../../images/icons/icon-up-trend.svg"
@@ -113,5 +114,11 @@ const Stock = ({ name, direction, currentValue, changeAmount, percent }) => {
     </Container>
   )
 }
-
+Stock.propTypes = {
+  name: PropTypes.string.isRequired,
+  direction: PropTypes.string.isRequired,
+  currentValue: PropTypes.number.isRequired,
+  changeAmount: PropTypes.string.isRequired,
+  percent: PropTypes.string.isRequired
+}
 export default Stock

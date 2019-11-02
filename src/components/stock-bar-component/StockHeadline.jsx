@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import PropTypes from "prop-types"
 
 const Headline = styled.div`
   font-family: "ProximaNova-Bold";
@@ -38,5 +39,7 @@ const StockHeadline = ({ headline }) => {
     </Headline>
   )
 }
-
+StockHeadline.propTypes = {
+  headline: PropTypes.string.isRequired
+}
 export default StockHeadline

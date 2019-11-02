@@ -31,7 +31,7 @@ const Link = styled.a`
   box-sizing: content-box;
   :hover {
     color: var(--secondary);
-    padding-top: 8px;
+    transform: translateY(8px);
     border-bottom: 7px solid var(--secondary);
   }
   @media (max-width: 1340px) {

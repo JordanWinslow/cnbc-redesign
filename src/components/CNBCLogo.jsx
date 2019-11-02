@@ -155,7 +155,7 @@ const SmallLogo = (
 )
 
 const Logo = styled.a`
-  width: calc(100px + 4vw);
+  width: calc(130px + 4vw);
   display: flex;
   align-items: center;
   svg {
@@ -166,7 +166,7 @@ const Logo = styled.a`
     filter: drop-shadow(0 3px 3px var(--black));
   }
   @media (max-width: 1020px) {
-    width: calc(90px + 3vw);
+    width: 170px;
   }
   @media (max-width: 750px) {
     width: 13rem;

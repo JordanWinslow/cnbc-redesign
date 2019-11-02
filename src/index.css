@@ -25,6 +25,7 @@ html {
   --fail: #cc2930;
 }
 body {
+  background-color: var(--white);
   margin: 0;
   font-family: "ProximaNova-Regular", "Arial", "Helvetica", sans-serif;
   font-size: 1.0625rem; /*Equivalent of 17px but more accessible*/

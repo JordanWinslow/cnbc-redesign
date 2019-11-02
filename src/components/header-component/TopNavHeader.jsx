@@ -18,7 +18,7 @@ const NavContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   @media (max-width: 920px) {
-    padding: 0.9rem 0.9rem;
+    padding: 0.9rem 0.5rem 0.9rem 0.3rem;
   }
   @media (max-width: 750px) {
     height: 3rem;
