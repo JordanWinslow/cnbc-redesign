@@ -18,10 +18,18 @@ const Container = styled.div`
     margin-right: 3rem;
   }
   @media (max-width: 1020px) {
+    box-sizing: border-box;
     margin: 0;
+    justify-content: start;
+    padding: 5vw 0;
+    width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 4vw;
+  }
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
   }
 `
 

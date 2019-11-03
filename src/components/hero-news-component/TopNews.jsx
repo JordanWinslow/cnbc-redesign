@@ -25,6 +25,10 @@ const Container = styled.div`
     margin: 0;
     width: 100%;
   }
+  @media (max-width: 900px) {
+    padding-bottom: 3rem;
+    height: 35rem;
+  }
 `
 const GradientOverlay = styled.div`
   position: absolute;
@@ -32,12 +36,30 @@ const GradientOverlay = styled.div`
   background: linear-gradient(90deg, #091d38 61.46%, rgba(9, 29, 56, 0) 100%);
   width: 66%;
   height: 100%;
+  @media (max-width: 1340px) {
+    width: 75%;
+  }
+  @media (max-width: 900px) {
+    bottom: 0;
+    height: 65%;
+    width: 100%;
+    background: linear-gradient(0deg, #091d38 61.46%, rgba(9, 29, 56, 0) 100%);
+  }
+  @media (max-width: 750px) {
+    height: 75%;
+  }
 `
 const NewsImage = styled.img`
   position: absolute;
   right: 0;
   height: 100%;
   transition: 5s ease-in-out;
+  @media (max-width: 900px) {
+    height: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
 `
 const Article = styled.div`
   z-index: 2; /*appear above the gradient*/
@@ -47,8 +69,20 @@ const Article = styled.div`
   width: 55%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  @media (max-width: 1340px) {
+    width: 65%;
+  }
+  @media (max-width: 900px) {
+    position: relative;
+    width: 90%;
+    justify-content: flex-end;
+  }
+  @media (max-width: 750px) {
+    position: relative;
+    left: 0;
+    margin: auto;
+  }
 `
 const Title = styled.h1`
   font-family: "ProximaNova-Xbold";
@@ -59,7 +93,14 @@ const Title = styled.h1`
   :hover {
     text-decoration: underline;
   }
-  @media (max-width: 1340px) {
+  @media (max-width: 1350px) {
+    font-size: calc(1rem + 2vw);
+  }
+  @media (max-width: 1020px) {
+    font-size: 2.8rem;
+  }
+  @media (max-width: 750px) {
+    font-size: calc(1.5rem + 3vw);
   }
 `
 const Excerpt = styled.p`
@@ -72,6 +113,9 @@ const Excerpt = styled.p`
   cursor: pointer;
   :hover {
     text-decoration: underline;
+  }
+  @media (max-width: 600px) {
+    font-size: calc(0.7rem + 2vw);
   }
 `
 

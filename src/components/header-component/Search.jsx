@@ -33,6 +33,7 @@ const SearchBox = styled.div`
     img {
       width: 24px;
     }
+    margin-left: 0.5rem;
   }
 `
 

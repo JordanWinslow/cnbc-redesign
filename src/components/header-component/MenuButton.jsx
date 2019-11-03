@@ -16,6 +16,9 @@ const Container = styled.div`
       ${props => (props.location === "top" ? "width: 24px;" : "")};
     }
   }
+  @media (max-width: 1020px) {
+    margin: 0 0.5rem;
+  }
   @media (max-width: 750px) {
     display: none;
   }

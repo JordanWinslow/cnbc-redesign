@@ -17,6 +17,10 @@ const Container = styled.div`
   @media (max-width: 1340px) {
     width: calc(15rem + 16vw);
   }
+  @media (max-width: 900px) {
+    width: 90%;
+    margin: auto;
+  }
 `
 const ArticleImage = styled.img`
   width: 9.8125rem;
@@ -49,6 +53,14 @@ const TimePosted = styled.p`
 `
 const Link = styled.a`
   text-decoration: none;
+  @media (max-width: 1020px) {
+    /* THIS WRAPS THE ENTIRE CARD SO IT DETERMINES ALIGNMENT */
+    justify-self: center; /*to align vertical grid*/
+  }
+  @media (max-width: 900px) {
+    width: 100%;
+    margin: auto;
+  }
 `
 
 const NewsCard = ({ image, title, timePosted, link }) => {
