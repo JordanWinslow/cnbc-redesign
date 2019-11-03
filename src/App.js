@@ -12,13 +12,11 @@ function App() {
       <StockBar />
       <NewsDivider />
       <FullWidthHero />
-      <h1 align="center" style={{ marginTop: "100px" }}>
-        WORK IN PROGRESS!
-      </h1>
-      <h2 align="center">EXPECT BUGS!</h2>
-      <p align="center">
-        Currently the Hero Section has not been finished so it will be broken on
-        smaller screens.
+      <p align="center" style={{ marginTop: "3rem" }}>
+        CNBC Redesign Project by Jordan Winslow. CNBC Logo trademarked and owned
+        by NBC Universal. Logo used for educational & demonstrational purposes
+        only. Jordan Winslow is not affiliated or endorsed by CNBC or NBC
+        Universal in any way.
       </p>
     </Fragment>
   )
