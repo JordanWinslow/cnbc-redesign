@@ -84,9 +84,11 @@ const AreaLogin = ({ active }) => {
   return (
     <ContentBox>
       <AreaLinks>
+        {/*eslint-disable-next-line*/}
         <a href="#" className={active === "USA" ? "area-link-active" : ""}>
           USA<ToolTip>View Only USA News</ToolTip>
         </a>
+        {/*eslint-disable-next-line*/}
         <a href="#" className={active === "INTL" ? "area-link-active" : ""}>
           INTL<ToolTip>View International News</ToolTip>
         </a>
