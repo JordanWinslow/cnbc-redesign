@@ -1,7 +1,7 @@
 # CNBC Redesign Project
 
 
-![Responsive Website Demo](https://media.giphy.com/media/mCJOTQy0vPve3nHfMB/giphy.gif)
+![](https://media.giphy.com/media/mCJOTQy0vPve3nHfMB/giphy.gif)
 
 
 ## Responsive, Modern & Built With Modular, Reusable Components
