@@ -16,6 +16,10 @@ function App() {
         WORK IN PROGRESS!
       </h1>
       <h2 align="center">EXPECT BUGS!</h2>
+      <p align="center">
+        Currently the Hero Section has not been finished so it will be broken on
+        smaller screens.
+      </p>
     </Fragment>
   )
 }

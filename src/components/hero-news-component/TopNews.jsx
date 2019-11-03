@@ -4,10 +4,23 @@ import PropTypes from "prop-types"
 
 const Container = styled.div`
   position: relative;
-  margin-left: 3rem;
+  margin: 0 3rem;
   width: 65.1875rem;
   height: 33.375rem;
-  border: 2px solid black;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  will-change: transform;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  :hover {
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
+    img {
+      transform: scale(1.1) rotate(3deg);
+    }
+  }
+  @media (max-width: 1320px) {
+    margin: 0 2rem 0 0;
+  }
 `
 const GradientOverlay = styled.div`
   position: absolute;
@@ -20,6 +33,7 @@ const NewsImage = styled.img`
   position: absolute;
   right: 0;
   height: 100%;
+  transition: 5s ease-in-out;
 `
 const Article = styled.div`
   z-index: 2; /*appear above the gradient*/
@@ -37,6 +51,12 @@ const Title = styled.h1`
   font-size: 2.8125rem;
   letter-spacing: 0.015em;
   color: var(--white);
+  cursor: pointer;
+  :hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 1340px) {
+  }
 `
 const Excerpt = styled.p`
   font-family: "ProximaNova-Bold";
@@ -45,6 +65,10 @@ const Excerpt = styled.p`
   /* or 30px */
   letter-spacing: 0.015em;
   color: var(--white);
+  cursor: pointer;
+  :hover {
+    text-decoration: underline;
+  }
 `
 
 const TopNews = ({ image, title, excerpt }) => {

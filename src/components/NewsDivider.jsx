@@ -17,6 +17,7 @@ const BlueBox = styled.div`
   background-color: var(--primaryLight);
 `
 const Header = styled.h2`
+  pointer-events: none;
   color: var(--primaryDark);
 `
 const LiveTVButton = styled.div`
