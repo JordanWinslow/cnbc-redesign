@@ -40,7 +40,6 @@ const DropDownMenu = ({ category }) => {
   )
 }
 DropDownMenu.propTypes = {
-  links: PropTypes.object.isRequired,
   category: PropTypes.string.isRequired
 }
 const links = {

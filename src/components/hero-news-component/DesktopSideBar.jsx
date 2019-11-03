@@ -43,7 +43,7 @@ const DesktopSideBar = () => {
     <Container>
       {Links.data.map(button => {
         return (
-          <a href={button.link}>
+          <a href={button.link} key={button.text}>
             <Button>
               <Text>{button.text}</Text>
               <img src={button.icon} alt={button.icon ? "Arrow Icon" : null} />

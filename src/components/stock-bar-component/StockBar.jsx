@@ -74,6 +74,7 @@ const StockBar = () => {
               currentValue={stock.currentValue}
               changeAmount={stock.changeAmount}
               percent={stock.percent}
+              key={stock.name}
             />
           )
         })}

@@ -43,6 +43,7 @@ const NewsCardStack = () => {
             title={article.title}
             timePosted={article.timePosted}
             link={article.link}
+            key={article.title}
           />
         )
       })}
