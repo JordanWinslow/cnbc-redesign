@@ -21,10 +21,20 @@ const Container = styled.div`
     width: 90%;
     margin: auto;
   }
+  @media (max-width: 500px) {
+    width: 95%;
+    height: 12rem;
+  }
 `
 const ArticleImage = styled.img`
   width: 9.8125rem;
   height: 9.8125rem;
+  @media (max-width: 500px) {
+    width: 30vw;
+    height: 30vw;
+    align-self: flex-start;
+    padding-top: 1rem;
+  }
 `
 const ArticleContent = styled.div`
   height: 85%;
@@ -43,6 +53,9 @@ const Title = styled.p`
   :hover {
     text-decoration: underline;
   }
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
 `
 const TimePosted = styled.p`
   font-family: "ProximaNova-Bold";
@@ -50,6 +63,10 @@ const TimePosted = styled.p`
   line-height: 0.9375rem;
   letter-spacing: 0.1em;
   color: var(--gray);
+  @media (max-width: 500px) {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+  }
 `
 const Link = styled.a`
   text-decoration: none;

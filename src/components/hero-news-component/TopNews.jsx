@@ -48,6 +48,9 @@ const GradientOverlay = styled.div`
   @media (max-width: 750px) {
     height: 75%;
   }
+  @media (max-width: 500px) {
+    height: 80%;
+  }
 `
 const NewsImage = styled.img`
   position: absolute;
@@ -59,6 +62,9 @@ const NewsImage = styled.img`
     left: 0;
     top: 0;
     width: 100%;
+  }
+  @media (max-width: 500px) {
+    width: 140%;
   }
 `
 const Article = styled.div`
@@ -101,6 +107,9 @@ const Title = styled.h1`
   }
   @media (max-width: 750px) {
     font-size: calc(1.5rem + 3vw);
+  }
+  @media (max-width: 500px) {
+    font-size: calc(1rem + 5vw);
   }
 `
 const Excerpt = styled.p`
