@@ -12,17 +12,26 @@ function App() {
       <StockBar />
       <NewsDivider />
       <FullWidthHero />
-      <p align="center" style={{ marginTop: "3rem" }}>
-        CNBC Redesign Project by Jordan Winslow. CNBC Logo trademarked and owned
-        by NBC Universal.
-      </p>
-      <p align="center">
-        Logo used for educational & demonstrational purposes only.
-      </p>
-      <p align="center">
-        Jordan Winslow is not affiliated or endorsed by CNBC or NBC Universal in
-        any way.
-      </p>
+      <footer
+        style={{
+          marginTop: "5rem",
+          backgroundColor: "var(--black)",
+          color: "var(--white)",
+          padding: "3rem"
+        }}
+      >
+        <p align="center" style={{ marginTop: "3rem" }}>
+          CNBC Redesign Project by Jordan Winslow. CNBC Logo trademarked and
+          owned by NBC Universal.
+        </p>
+        <p align="center">
+          Logo used for educational & demonstrational purposes only.
+        </p>
+        <p align="center">
+          Jordan Winslow is not affiliated or endorsed by CNBC or NBC Universal
+          in any way.
+        </p>
+      </footer>
     </Fragment>
   )
 }
