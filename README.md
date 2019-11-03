@@ -1,8 +1,16 @@
+<p align="center">
+  <a href="https://jordanwinslow.dev">
+    <img alt="Jordan Winslow Logo" src="https://gdurl.com/q7oI" />
+  </a>
+</p>
+
 # CNBC Redesign Project
 
+<div align="center">
+  
+![](https://media.giphy.com/media/mCJOTQy0vPve3nHfMB/giphy.gif)
 
-![](https://gph.is/g/ajjWWGB)
-
+</div>
 
 ## Responsive, Modern & Built With Modular, Reusable Components
 
