@@ -33,6 +33,7 @@ const Container = styled.div`
     /*MAKE TOOLTIP VISIBLE ON HOVER ON DESKTOP ONLY*/
     @media (pointer: fine) {
       span {
+        display: initial;
         transition: opacity 0.3s ease-in;
         transition-delay: 1s;
       }
@@ -84,6 +85,8 @@ const ChangePercent = styled.p`
   /**/
 `
 const ToolTip = styled.span`
+  /*must begin display:none or else it can cause overflow*/
+  display: none;
   position: absolute;
   z-index: 999;
   pointer-events: none;

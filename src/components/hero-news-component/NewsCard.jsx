@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Container = styled.div`
   cursor: pointer;
-  width: 28.3125rem;
+  width: 100%;
   height: 9.8125rem;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;

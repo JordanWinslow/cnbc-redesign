@@ -18,7 +18,7 @@ const Container = styled.div`
       transform: scale(1.1) rotate(3deg);
     }
   }
-  @media (max-width: 1320px) {
+  @media (max-width: 1340px) {
     margin: 0 2rem 0 0;
   }
 `

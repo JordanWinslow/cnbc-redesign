@@ -9,6 +9,8 @@ import NewsImage3 from "../../images/articles/square-uaw.png"
 
 const Container = styled.div`
   height: 33.375rem; /*MUST BE EQUAL TO HEIGHT OF TOP NEWS COMPONENT*/
+  width: 28.3125rem;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
