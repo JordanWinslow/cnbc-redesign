@@ -9,6 +9,13 @@ const Container = styled.div`
   background-color: var(--white);
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
   min-width: 15rem;
+  /*on small screens, nav component goes off screen for the last 2 links. This changes the orientation dynamically so that doesn't happen!*/
+  @media (max-width: 1020px) {
+    ${props =>
+      props.category === "cnbcTV" || props.category === "politics"
+        ? "right: 0;"
+        : ""};
+  }
 `
 const Link = styled.div`
   color: var(--black);
@@ -25,7 +32,7 @@ const Link = styled.div`
 
 const DropDownMenu = ({ category }) => {
   return (
-    <Container>
+    <Container category={category}>
       {links[category].map(link => {
         return <Link href={link.link}>{link.title}</Link>
       })}
