@@ -8,7 +8,7 @@
 
 <div align="center">
   
-![](https://media.giphy.com/media/mCJOTQy0vPve3nHfMB/giphy.gif)
+![](./CNBC%20Redesign%20Demo.gif)
 
 </div>
 
