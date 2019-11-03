@@ -46,7 +46,7 @@ const DesktopSideBar = () => {
           <a href={button.link}>
             <Button>
               <Text>{button.text}</Text>
-              <img src={button.icon} alt="Arrow Icon" />
+              <img src={button.icon} alt={button.icon ? "Arrow Icon" : null} />
             </Button>
           </a>
         )
