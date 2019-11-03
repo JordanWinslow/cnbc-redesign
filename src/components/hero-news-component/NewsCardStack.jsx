@@ -10,7 +10,6 @@ import NewsImage3 from "../../images/articles/square-uaw.png"
 const Container = styled.div`
   height: 33.375rem; /*MUST BE EQUAL TO HEIGHT OF TOP NEWS COMPONENT*/
   width: 28.3125rem;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -19,9 +18,8 @@ const Container = styled.div`
     margin-right: 3rem;
   }
   @media (max-width: 1020px) {
+    margin: 0;
     height: auto;
-    margin: 3rem 0;
-    gap: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

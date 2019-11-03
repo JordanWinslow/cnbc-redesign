@@ -11,10 +11,12 @@ import TopNewsImage from "../../images/articles/hero-worker.png"
 const Container = styled.div`
   width: 100%;
   display: flex;
-  align-items: center;
+
   justify-content: flex-start;
   @media (max-width: 1020px) {
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
   }
 `
 

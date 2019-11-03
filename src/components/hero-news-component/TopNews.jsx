@@ -21,6 +21,10 @@ const Container = styled.div`
   @media (max-width: 1340px) {
     margin: 0 2rem 0 0;
   }
+  @media (max-width: 1020px) {
+    margin: 0;
+    width: 100%;
+  }
 `
 const GradientOverlay = styled.div`
   position: absolute;
