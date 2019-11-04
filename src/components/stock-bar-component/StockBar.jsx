@@ -62,7 +62,7 @@ const StockBar = () => {
       <LinkHeadlineSection>
         <StockNavigation />
         <Divider />
-        <Headline headline="Dow drops more than 100 points, S&P 600 falls from record to end October." />
+        <Headline headline="Market fluctuations cause speculation about the fluctuation of speculations." />
       </LinkHeadlineSection>
       <StockContainer>
         {FETCHCNBCAPI.data.map(stock => {

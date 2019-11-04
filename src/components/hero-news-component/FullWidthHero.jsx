@@ -25,8 +25,8 @@ const FullWidthHero = () => {
     <Container>
       <TopNews
         image={TopNewsImage}
-        title="The jobs numbers are out on Friday, but there’s another report that could be much more important"
-        excerpt="A monthly manufacturing report Friday could be more impactful for markets than the jobs report, which was impacted by the GM strike."
+        title="There are numbers about jobs, doing job related things which could have a big impact on jobs. "
+        excerpt="A job report is out this Tuesday which has serious implications about job related job things for people with jobs. Read more immediately."
       />
       <NewsCardStack />
       <DesktopSideBar />

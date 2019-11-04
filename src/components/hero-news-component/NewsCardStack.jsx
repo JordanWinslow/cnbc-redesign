@@ -3,9 +3,9 @@ import styled from "styled-components"
 
 import NewsCard from "./NewsCard"
 
-import NewsImage1 from "../../images/articles/square-trump.png"
-import NewsImage2 from "../../images/articles/square-ceo.png"
-import NewsImage3 from "../../images/articles/square-uaw.png"
+import NewsImage1 from "../../images/articles/square-trump.jpg"
+import NewsImage2 from "../../images/articles/square-ceo.jpg"
+import NewsImage3 from "../../images/articles/square-uaw.jpg"
 
 const Container = styled.div`
   height: 33.375rem; /*MUST BE EQUAL TO HEIGHT OF TOP NEWS COMPONENT*/
@@ -56,21 +56,21 @@ const FETCHCNBCNEWSAPI = {
     {
       image: NewsImage1,
       title:
-        "Wall Street strategists dispute Trump’s claim that impeachment is impacting the stock market",
+        "Wall Street once again does something related to money. Picture unrelated.",
       timePosted: "19 MIN AGO",
       link: "#"
     },
     {
       image: NewsImage2,
       title:
-        "Ex-WeWork CEO accused of gender discrimination, smoking pot in front of pregnant staffer",
+        "Ex-CEO of business incorporated did a thing, and we are going to talk about that thing in this article.",
       timePosted: "44 MIN AGO",
       link: "#"
     },
     {
       image: NewsImage3,
       title:
-        "US prosecutors say UAW leaders embezzled more than $1.5 million in union funds",
+        "US Politicians sit on nice chairs in a dimly lit room and talk about politics. Find out more.",
       timePosted: "AN HOUR AGO",
       link: "#"
     }
