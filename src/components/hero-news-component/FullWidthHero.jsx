@@ -6,7 +6,7 @@ import TopNews from "./TopNews"
 import NewsCardStack from "./NewsCardStack"
 import DesktopSideBar from "./DesktopSideBar"
 
-import TopNewsImage from "../../images/articles/hero-worker.png"
+import TopNewsImage from "../../images/articles/hero-worker.jpg"
 
 const Container = styled.div`
   width: 100%;
