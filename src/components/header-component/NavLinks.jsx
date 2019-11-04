@@ -89,11 +89,11 @@ const NavLinks = () => {
       </Link>
       <Link
         href="#"
-        onMouseOver={() => setVisible({ cnbcTV: true })}
-        onMouseLeave={() => setVisible({ cnbcTV: false })}
+        onMouseOver={() => setVisible({ newsTV: true })}
+        onMouseLeave={() => setVisible({ newsTV: false })}
       >
-        CNBC TV
-        {visible.cnbcTV && <DropDownMenu category="cnbcTV" />}
+        NEWS TV
+        {visible.newsTV && <DropDownMenu category="newsTV" />}
       </Link>
     </Container>
   )

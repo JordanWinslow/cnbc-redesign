@@ -213,7 +213,7 @@ const links = {
       link: "#"
     }
   ],
-  cnbcTV: [
+  newsTV: [
     {
       title: "LIVE TV",
       link: "#"
