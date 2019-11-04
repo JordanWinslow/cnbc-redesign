@@ -12,7 +12,7 @@ const Container = styled.div`
   /*on small screens, nav component goes off screen for the last 2 links. This changes the orientation dynamically so that doesn't happen!*/
   @media (max-width: 1020px) {
     ${props =>
-      props.category === "cnbcTV" || props.category === "politics"
+      props.category === "newsTV" || props.category === "politics"
         ? "right: 0;"
         : ""};
   }
