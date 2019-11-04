@@ -12,11 +12,7 @@ const Footer = () => {
       }}
     >
       <p align="center" style={{ marginTop: "3rem" }}>
-        CNBC Redesign Project by Jordan Winslow. CNBC Logo trademarked and owned
-        by NBC Universal.
-      </p>
-      <p align="center">
-        Logo used for educational & demonstrational purposes only.
+        Design & Code by Jordan Winslow.
       </p>
       <p align="center">
         Jordan Winslow is not affiliated or endorsed by CNBC or NBC Universal in
