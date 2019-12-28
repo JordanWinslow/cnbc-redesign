@@ -216,7 +216,8 @@ const SmallLogo = (
 )
 
 const Logo = styled.a`
-  width: calc(130px + 4vw);
+  /*width: calc(130px + 4vw);*/
+  width: 100px
   display: flex;
   align-items: center;
   svg {
@@ -226,9 +227,6 @@ const Logo = styled.a`
     transform: translateY(-1px);
     filter: drop-shadow(0 3px 3px var(--black));
   }
-  @media (max-width: 1020px) {
-    width: 170px;
-  }
   @media (max-width: 750px) {
     width: 13rem;
   }
@@ -236,7 +234,7 @@ const Logo = styled.a`
 
 const CNBCLogo = ({ type }) => {
   return (
-    <Logo href="#" alt="Return to CNBC Homepage">
+    <Logo href="https://jordanwinslow.dev" alt="Visit Jordan Winslow's Front End Developer & Design Portfolio" rel="noopener noreferrer" target="_blank">
       {type === "wide" ? WideLogo : SmallLogo}
     </Logo>
   )
